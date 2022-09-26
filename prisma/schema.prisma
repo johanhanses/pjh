@@ -25,3 +25,53 @@ model Post {
   title     String
   body      String
 }
+
+model CvHeader {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  lang        String
+  name        String
+  email       String
+  phone       String
+  github      String
+  address     String
+  linkedin    String
+  driverslic  String
+  dateofbirth String
+}
+
+model CvSkills {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  db          String
+  test        String
+  other       String
+  tools       String
+  server      String
+  backend     String
+  frontend    String
+  programming String
+}
+
+model CvWork {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  date        String
+  employee    String
+  position    String
+  description String   @db.Text
+}
+
+model CvEducation {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  date        String
+  school      String
+  education   String
+  points      String
+  description String   @db.Text
+}

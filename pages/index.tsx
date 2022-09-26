@@ -8,9 +8,16 @@ export default function Home() {
       <h1 className="text-3xl">Home</h1>
       <ThemeToggler />
       <LogInOutButton />
-      <Link href="/posts">
-        <a>Posts</a>
-      </Link>
+      <p>
+        <Link href="/posts">
+          <a>Posts</a>
+        </Link>
+      </p>
+      <p>
+        <Link href="/cv">
+          <a>CV</a>
+        </Link>
+      </p>
     </div>
   )
 }

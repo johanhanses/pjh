@@ -14,19 +14,9 @@ export default function SignIn({ csrfToken }: SignInProps) {
       action="/api/auth/callback/credentials"
       className="space-y-4 w-full sm:w-1/2 mx-auto"
     >
-      <input
-        name="csrfToken"
-        type="hidden"
-        defaultValue={csrfToken}
-      />
-      <Input
-        name="username"
-        type="text"
-      />
-      <Input
-        name="password"
-        type="password"
-      />
+      <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
+      <Input name="username" type="text" />
+      <Input name="password" type="password" />
       <Button />
     </form>
   )
