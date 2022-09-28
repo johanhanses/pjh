@@ -1,6 +1,7 @@
 import { Post } from '@prisma/client'
 import Link from 'next/link'
 import { GetStaticProps } from 'next/types'
+import { Layout } from '../../components/Layout'
 import prisma from '../../lib/prisma'
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -19,7 +20,7 @@ type PostsProps = {
 
 export default function Posts({ posts }: PostsProps) {
   return (
-    <div className="mx-auto max-w-5xl">
+    <Layout>
       <h1 className="text-3xl mb-4">Posts</h1>
       <main className="space-y-8">
         {posts &&
@@ -35,6 +36,6 @@ export default function Posts({ posts }: PostsProps) {
             </Link>
           ))}
       </main>
-    </div>
+    </Layout>
   )
 }

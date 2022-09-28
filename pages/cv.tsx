@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next/types'
 import prisma from '../lib/prisma'
 import Image from 'next/future/image'
 import Link from 'next/link'
+import { Layout } from '../components/Layout'
 
 export const getStaticProps: GetStaticProps = async () => {
   const header = await prisma.cvHeader.findFirst()
@@ -28,9 +29,8 @@ type CvProps = {
 }
 
 export default function Cv({ header, skills, works, educations }: CvProps) {
-  console.log(skills)
   return (
-    <div className="mx-auto max-w-5xl">
+    <Layout>
       <nav className="block space-x-4">
         <Link href="/cv">
           <a>CV</a>
@@ -88,6 +88,6 @@ export default function Cv({ header, skills, works, educations }: CvProps) {
           ))}
         </section>
       </main>
-    </div>
+    </Layout>
   )
 }

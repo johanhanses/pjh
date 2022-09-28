@@ -10,10 +10,10 @@ export const LogInOutButton = () => {
       </div>
     )
   }
-
-  return (
-    <div>
-      <button onClick={() => signIn()}>Login</button>
-    </div>
-  )
+  return null
+  // return (
+  //   <div>
+  //     <button onClick={() => signIn()}>Login</button>
+  //   </div>
+  // )
 }

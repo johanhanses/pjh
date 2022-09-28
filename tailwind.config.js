@@ -7,8 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        18: '4.25rem'
+      },
+      colors: {
+        textColor: '#111111',
+        bgColor: '#FAFAFA',
+        darkBgColor: '#1D1F21',
+        darkTextColor: '#EEEEEE',
+        themeOrange: '#F47B51',
+        themeRed: '#D63447',
+        themeGreen: '#2C7E60'
+      },
       fontFamily: {
-        inter: ['Inter', 'sans-serif']
+        karla: ['Karla', 'sans-serif']
       }
     }
   },

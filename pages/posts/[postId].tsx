@@ -1,5 +1,6 @@
 import { Post as PostType } from '@prisma/client'
 import { GetServerSideProps } from 'next/types'
+import { Layout } from '../../components/Layout'
 import prisma from '../../lib/prisma'
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
@@ -20,12 +21,14 @@ type PostProps = {
 
 export default function Post({ post }: PostProps) {
   return (
-    <article className="mx-auto max-w-5xl">
-      <h2>{post.title}</h2>
-      <small>{post.createdAt.toString()}</small>
-      <div>
-        <p>{post.body}</p>
-      </div>
-    </article>
+    <Layout>
+      <article>
+        <h2>{post.title}</h2>
+        <small>{post.createdAt.toString()}</small>
+        <div>
+          <p>{post.body}</p>
+        </div>
+      </article>
+    </Layout>
   )
 }
