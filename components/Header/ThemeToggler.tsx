@@ -21,7 +21,7 @@ export const ThemeToggler = () => {
       name="Change Theme"
       aria-label="Change Theme"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="hover:text-themeOrange dark:hover:text-themeGreen pb-1"
+      className="hover:text-themeOrange dark:hover:text-themeGreen pb-1 focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen"
     >
       {theme === 'dark' ? <Sun /> : <Moon />}
     </button>

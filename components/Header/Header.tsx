@@ -14,7 +14,7 @@ export const Header = ({
   return (
     <header className="w-full flex items-center justify-between py-12">
       <Link href="/">
-        <a>
+        <a className="focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen">
           <h1 className="text-6xl font-bold text-black dark:text-white">
             {title}
           </h1>
@@ -24,8 +24,8 @@ export const Header = ({
 
       <nav className="flex items-center text-xl space-x-6">
         <LogInOutButton />
-        <Button type="link" passedHref="/posts" title="Posts" />
-        <Button type="link" passedHref="/cv" title="CV" />
+        <Button type="link" passedHref="/posts" title="Posts" variant="ghost" />
+        <Button type="link" passedHref="/cv" title="CV" variant="ghost" />
         <ThemeToggler />
       </nav>
     </header>

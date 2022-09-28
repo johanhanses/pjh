@@ -1,7 +1,7 @@
 import { GetServerSideProps } from 'next'
 import { getCsrfToken } from 'next-auth/react'
-import { Button } from '../../../components/Auth/Button'
 import { Input } from '../../../components/Auth/Input'
+import { Button } from '../../../components/Button'
 import { Layout } from '../../../components/Layout'
 
 type SignInProps = {
@@ -14,12 +14,17 @@ export default function SignIn({ csrfToken }: SignInProps) {
       <form
         method="post"
         action="/api/auth/callback/credentials"
-        className="space-y-4 w-full sm:w-1/2 mx-auto"
+        className="space-y-4 w-full sm:w-1/2 md:w-1/3 mx-auto"
       >
         <input name="csrfToken" type="hidden" defaultValue={csrfToken} />
         <Input name="username" type="text" />
         <Input name="password" type="password" />
-        <Button />
+        <Button
+          type="button"
+          title="Login"
+          additionalClasses="mx-auto block"
+          variant="filled"
+        />
       </form>
     </Layout>
   )
