@@ -12,7 +12,7 @@ export const Header = ({
   description: string
 }) => {
   return (
-    <header className="w-full flex items-center justify-between py-12">
+    <header className="w-full flex items-center justify-between py-24">
       <Link href="/">
         <a className="focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen">
           <h1 className="text-6xl font-bold text-black dark:text-white">
