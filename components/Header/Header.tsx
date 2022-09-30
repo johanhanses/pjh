@@ -29,7 +29,11 @@ export const Header = ({
           <p className="text-xs md:text-lg font-semibold">{description}</p>
         </a>
       </Link>
-      <button className="md:hidden ml-auto mr-4" onClick={toggleMenu}>
+      <button
+        aria-label="mobile menu toggler"
+        className="md:hidden ml-auto mr-4"
+        onClick={toggleMenu}
+      >
         <Hamburger />
       </button>
       <div
