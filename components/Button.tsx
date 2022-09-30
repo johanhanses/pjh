@@ -9,9 +9,9 @@ type ButtonProps = {
 }
 
 const ghostClasses =
-  'focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen py-1 px-4 hover:bg-themeOrange hover:bg-opacity-10 dark:hover:bg-themeGreen dark:hover:bg-opacity-20 rounded-lg transition-colors duration-300'
+  'focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen md:py-1 md:px-4 hover:bg-themeOrange hover:bg-opacity-10 dark:hover:bg-themeGreen dark:hover:bg-opacity-20 md:rounded-lg transition-colors duration-300'
 const filledClasses =
-  'focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen py-1 px-4 border hover:bg-themeOrange hover:bg-opacity-10 dark:hover:bg-themeGreen dark:hover:bg-opacity-20 rounded-lg transition-colors duration-300'
+  'focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen py-1 px-4 border hover:bg-themeOrange hover:bg-opacity-10 dark:hover:bg-themeGreen dark:hover:bg-opacity-20 md:rounded-lg transition-colors duration-300'
 
 export const Button = ({
   type,

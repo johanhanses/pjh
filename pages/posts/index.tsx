@@ -21,7 +21,7 @@ type PostsProps = {
 export default function Posts({ posts }: PostsProps) {
   return (
     <Layout>
-      <h1 className="text-3xl mb-4">Posts</h1>
+      <h1 className="text-2xl md:text-3xl mb-4">Posts</h1>
       <main className="space-y-8">
         {posts &&
           posts.map((post) => (

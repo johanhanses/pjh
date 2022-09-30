@@ -18,7 +18,7 @@ export const LogInOutButton = () => {
       <div>
         <button
           onClick={() => signOut()}
-          className="focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen py-1 px-4 hover:bg-themeOrange hover:bg-opacity-10 dark:hover:bg-themeGreen dark:hover:bg-opacity-20 rounded-lg transition-colors duration-300"
+          className="focus:outline-none focus:ring focus:ring-themeOrange dark:focus:ring-themeGreen py-1 px-4 hover:bg-themeOrange hover:bg-opacity-10 dark:hover:bg-themeGreen dark:hover:bg-opacity-20 rounded-lg transition-colors duration-300 block md:inline"
         >
           Logout
         </button>
