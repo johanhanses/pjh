@@ -2,6 +2,7 @@ import { Post } from '@prisma/client'
 import Link from 'next/link'
 import { GetStaticProps } from 'next/types'
 import { Layout } from '../../components/Layout'
+import { Seo } from '../../components/Seo'
 import prisma from '../../lib/prisma'
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -21,6 +22,11 @@ type PostsProps = {
 export default function Posts({ posts }: PostsProps) {
   return (
     <Layout>
+      <Seo
+        title="Johan Hanses - Posts"
+        description="Welcome to Johan Hanses home."
+        keywords="Typescript, Developer, React"
+      />
       <h1 className="text-2xl md:text-3xl mb-4">Posts</h1>
       <main className="space-y-8">
         {posts &&

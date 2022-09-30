@@ -1,10 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/future/image'
 import { Layout } from '../components/Layout'
+import { Seo } from '../components/Seo'
 
 export default function CoverLetter() {
   return (
     <Layout>
+      <Seo
+        title="Johan Hanses - Cover-letter"
+        description="Welcome to Johan Hanses home."
+        keywords="Typescript, Developer, React"
+      />
       <nav className="block space-x-4">
         <Link href="/cv">
           <a>CV</a>

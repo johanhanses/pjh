@@ -4,6 +4,7 @@ import prisma from '../lib/prisma'
 import Image from 'next/future/image'
 import Link from 'next/link'
 import { Layout } from '../components/Layout'
+import { Seo } from '../components/Seo'
 
 export const getStaticProps: GetStaticProps = async () => {
   const header = await prisma.cvHeader.findFirst()
@@ -31,6 +32,11 @@ type CvProps = {
 export default function Cv({ header, skills, works, educations }: CvProps) {
   return (
     <Layout>
+      <Seo
+        title="Johan Hanses - CV"
+        description="Welcome to Johan Hanses home."
+        keywords="Typescript, Developer, React"
+      />
       <nav className="block space-x-4">
         <Link href="/cv">
           <a>CV</a>

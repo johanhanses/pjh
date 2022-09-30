@@ -33,7 +33,7 @@ export const Header = ({
         <Hamburger />
       </button>
       <div
-        className="md:flex flex-col md:flex-row md:items-center text-xl md:space-x-6 hidden absolute md:static top-24 left-6 right-6 rounded-lg md:rounded-none border md:border-none bg-white dark:bg-black  text-right p-6 md:p-0 space-y-6 md:space-y-0 ml-auto mr-6"
+        className="md:flex flex-col md:flex-row md:items-center text-xl md:space-x-6 hidden absolute md:static top-24 left-6 right-6 rounded-lg md:rounded-none border md:border-none bg-white dark:bg-black text-right p-6 md:p-0 space-y-6 md:space-y-0 ml-auto mr-6 z-10"
         ref={navRef}
       >
         <LogInOutButton />
