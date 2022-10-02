@@ -13,12 +13,22 @@ export default function CoverLetter() {
         keywords="Typescript, Developer, React"
       />
       <CvNav />
-      <main>Hej</main>
-      <aside>
-        <div className="w-[300px] h-[375px] relative">
-          <Image src="/kallslatten.jpeg" fill alt="jag i källslätten" />
-        </div>
-      </aside>
+
+      <div className="border-t border-themeOrange dark:border-themeGreen pb-8" />
+      <main className="flex flex-col md:flex-row">
+        <article className="w-full md:w-2/3 order-last md:order-first py-8">
+          Tjo
+        </article>
+        <aside className="w-full md:w-1/3 order-first md:order-last">
+          <div className="w-[300px] h-[375px] relative mx-auto">
+            <Image
+              src="/kallslatten.jpeg"
+              fill
+              alt="Jag vid källslätten med grabbarna grus"
+            />
+          </div>
+        </aside>
+      </main>
     </Layout>
   )
 }
