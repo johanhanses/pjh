@@ -13,7 +13,7 @@ export const Layout = ({ children }: LayoutProps) => {
           title="Johan Hanses"
           description="TypeScripter | Frontend Developer | DevOpser"
         />
-        <main className="my-6">{children}</main>
+        <main className="py-6">{children}</main>
       </div>
     </div>
   )
