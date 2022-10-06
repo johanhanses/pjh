@@ -42,7 +42,7 @@ export default NextAuth({
 
       return token
     },
-    session: ({ session, user, token }) => {
+    session: ({ session, token }) => {
       if (token) session.id = token.id
 
       return session

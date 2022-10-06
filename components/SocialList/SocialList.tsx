@@ -22,7 +22,7 @@ const links = [
 ]
 
 export const SocialList = () => (
-  <ul className="flex items-baseline space-x-6">
+  <ul className="flex space-x-6">
     {links.map((link) => (
       <li key={link.url}>
         <a

@@ -10,18 +10,24 @@ export default function Home() {
         description="Welcome to Johan Hanses home."
         keywords="Typescript, Developer, React"
       />
-      <p className="mb-6 text xl">
-        React and TypeScript developer based in Falun, Sweden. Building HR-Tech
-        at{' '}
-        <a
-          href="https://worklygroup.com"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="underline"
-        >
-          Workly
-        </a>
-      </p>
+      <div className="mb-6 text xl">
+        <p>
+          React and TypeScript developer based in Falun, Sweden. Building
+          HR-Tech at{' '}
+          <a
+            href="https://worklygroup.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="underline"
+          >
+            Workly.
+          </a>
+        </p>
+        <p>
+          Interested in tools such as Cloud/Serverless/Edge-stuff, Nextjs, Remix
+          and Tailwind, playing with Go.
+        </p>
+      </div>
       <SocialList />
     </Layout>
   )
