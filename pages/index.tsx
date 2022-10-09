@@ -24,8 +24,8 @@ export default function Home() {
           </a>
         </p>
         <p>
-          Interested in tools such as Cloud/Serverless/Edge-stuff, and Tailwind.
-          currently very Vue/Nuxt3 curious.
+          Interested in tools such as Cloud/Serverless/Edge-stuff, Tailwind and
+          currently very Vue3/Nuxt3-curious.
         </p>
       </div>
       <SocialList />
