@@ -1,10 +1,15 @@
-import Link from 'next/link'
 import Image from 'next/future/image'
 import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
 import { CvNav } from '../components/CvNav'
+// import { useSession } from 'next-auth/react'
 
 export default function CoverLetter() {
+  // const { data, status } = useSession()
+  // if (status === 'authenticated') {
+  //   console.log(data.id)
+  // }
+
   return (
     <Layout>
       <Seo
