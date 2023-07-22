@@ -1,7 +1,9 @@
 export default function Home() {
   return (
     <section className="max-w-xl text-center">
-      <h1 className="text-primary-content font-serif text-6xl md:text-7xl mb-12">Johan Hanses</h1>
+      <h1 className="text-black dark:text-white font-serif text-6xl md:text-7xl mb-12">
+        Johan Hanses
+      </h1>
       <p>
         A software developer using TypeScript, Node, React, GraphQL, SQL, Next and Remix. Currently
         learning data visualisations with D3.
