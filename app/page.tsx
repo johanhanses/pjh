@@ -12,7 +12,7 @@ export default function Home() {
           href="https://www.digitaltvilling.se"
           target="_blank"
           rel="noopener nofollow noreferrer"
-          className="text-accent hover:underline"
+          className="text-accent hover:text-secondary transition"
         >
           digitaltvilling.se
         </a>
