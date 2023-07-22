@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="bg-red-700 h-[calc(100vh-8rem)] flex flex-col justify-center items-center">
+        <main className="h-[calc(100vh-8rem)] flex flex-col justify-center items-center px-6">
           {children}
         </main>
       </body>
