@@ -1,10 +1,11 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const openSans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Johan Hanses',
@@ -28,12 +29,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={openSans.className}>
         <Header />
         <main className="h-[calc(100vh-8rem)] flex flex-col justify-center items-center px-6">
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

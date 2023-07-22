@@ -60,15 +60,11 @@ export default function Header() {
     <header className="w-full h-16 flex items-center justify-center bg-base-100">
       <nav>
         <ul className="menu menu-horizontal bg-base-200 rounded-box">
-          {links.map((link) => {
-            console.log(link)
-
-            return (
-              <li key={link.href}>
-                <MenuLink href={link.href} label={link.label} icon={link.icon} />
-              </li>
-            )
-          })}
+          {links.map((link) => (
+            <li key={link.href}>
+              <MenuLink href={link.href} label={link.label} icon={link.icon} />
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
