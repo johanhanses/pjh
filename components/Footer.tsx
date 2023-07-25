@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between h-16 max-w-xl mx-auto px-6">
+    <footer className="flex items-center justify-between h-16 max-w-xl mx-auto px-6 animate-in fade-in duration-700">
       <p className="text-xs">© {new Date().getFullYear()}</p>
       <ul role="list" className="flex gap-2 text-xs">
         <li>
