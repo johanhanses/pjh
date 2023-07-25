@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={openSans.className}>
         <Header />
-        <main className="h-[calc(100vh-8rem)] flex flex-col justify-center items-center px-6">
+        <main className="h-[calc(100vh-8rem)] flex flex-col justify-center items-center px-6 md:px-0">
           {children}
         </main>
         <Footer />

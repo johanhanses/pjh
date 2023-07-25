@@ -5,11 +5,7 @@ export default function Home() {
         Johan Hanses
       </h1>
       <p>
-        A software developer using TypeScript, Node, React, GraphQL, SQL, Next and Remix. Currently
-        learning data visualisations with D3.
-      </p>
-      <p>
-        Work is at{' '}
+        A software developer at{' '}
         <a
           href="https://www.digitaltvilling.se"
           target="_blank"
@@ -18,6 +14,12 @@ export default function Home() {
         >
           digitaltvilling.se
         </a>
+        .
+      </p>
+      <p>
+        Builds stuff using TypeScript, Node, React, Vue, Svekte, GraphQL, SQL, Docker, Next and
+        Remix. Currently learning data visualisations with D3. Should also learn python and get into
+        ML.
       </p>
     </section>
   )
