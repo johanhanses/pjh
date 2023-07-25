@@ -1,3 +1,3 @@
 export default function Demos() {
-  return <div>Demos</div>
+  return <div>WIP</div>
 }
