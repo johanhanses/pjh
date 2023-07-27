@@ -17,7 +17,7 @@ export default function Home() {
         .
       </p>
       <p>
-        Builds stuff using TypeScript, Node, React, Vue, Svekte, GraphQL, SQL, Docker, Next and
+        Builds stuff using TypeScript, Node, React, Vue, Svelte, GraphQL, SQL, Docker, Next and
         Remix. Currently learning data visualisations with D3. Should also learn python and get into
         ML.
       </p>
