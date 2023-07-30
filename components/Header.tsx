@@ -57,7 +57,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="w-full h-16 flex items-center justify-center bg-base-100 animate-in zoom-in duration-700">
+    <header className="w-full h-16 flex items-center justify-center bg-base-100 animate-in zoom-in duration-1000">
       <nav>
         <ul className="menu menu-horizontal bg-base-200 rounded-box">
           {links.map((link) => (
