@@ -19,8 +19,8 @@ export default function Home() {
         </p>
         <p>
           Builds stuff using TypeScript, Node, React, Vue, Svelte, GraphQL, SQL, Docker, Next and
-          Remix. Currently learning data visualisations with D3. Should also learn python and get
-          into ML.
+          Remix. Currently learning data visualisations with D3. Should learn python and get into
+          ML.
         </p>
       </div>
     </section>
