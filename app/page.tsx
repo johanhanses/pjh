@@ -18,7 +18,7 @@ export default function Home() {
           .
         </p>
         <p>
-          Builds stuff using TypeScript, Node, React, GraphQL, SQL, Docker, Next and Remix.
+          Builds stuff using TypeScript, Node, React, Vue, GraphQL, SQL, Docker, Next and Remix.
           Currently learning data visualisations with D3 and Visx.
         </p>
       </div>
